@@ -1,10 +1,176 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Dev Tiwari - My Website</title>
-  </head>
-  <body>
-    <h1>Hello, I'm Dev Tiwari!</h1>
-    <p>Welcome to my first website hosted on GitHub Pages.</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Live Darbaar</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #000428, #004e92);
+      color: #fff;
+    }
+    header, nav, section, footer {
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #111;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav button {
+      margin: 5px;
+      padding: 10px 16px;
+      background: #4e54c8;
+      border: none;
+      border-radius: 20px;
+      color: white;
+      cursor: pointer;
+    }
+    nav button:hover {
+      background: #8f94fb;
+    }
+    .feature-section {
+      display: none;
+      background: #111;
+      margin: 20px;
+      padding: 30px;
+      border-radius: 20px;
+    }
+    .feature-section img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+    #home {
+      display: block;
+    }
+    footer {
+      background: #000;
+      color: #aaa;
+      margin-top: 40px;
+    }
+
+    /* Updated WhatsApp Floating Button */
+    .whatsapp-float {
+      width: 60px;
+      height: 75px;
+      background-color: white;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 2px 2px 10px #000;
+      z-index: 100;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-top: 5px;
+      text-decoration: none;
+    }
+    .whatsapp-float img {
+      width: 35px;
+      height: 35px;
+    }
+    .whatsapp-float span {
+      font-size: 12px;
+      color: #000;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Live Darbaar</h1>
+    <p>From Entertainment to Income — Everything Starts with a Stream</p>
+  </header>
+
+  <nav>
+    <button onclick="showSection('home')">Home</button>
+    <button onclick="showSection('live')">Go Live</button>
+    <button onclick="showSection('call')">1-to-1 Call</button>
+    <button onclick="showSection('gaming')">Gaming</button>
+    <button onclick="showSection('earn')">Earnings</button>
+    <button onclick="showSection('join')">Application you can join</button>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="feature-section">
+    <h2>Welcome to Live Darbaar</h2>
+    <p>Join thousands of creators making money doing what they love — LIVE!</p>
+    <img src="https://cdn.glitch.global/96912554-eda5-489d-8b26-b42df64afbe5/home1.jpg?v=1750012647376" alt="home banner 1"/>
+    <img src="https://cdn.glitch.global/96912554-eda5-489d-8b26-b42df64afbe5/thumbnails%2Fdev.html.jpg?1750779551045" alt="home banner 2"/>
+    <img src="https://cdn.glitch.global/96912554-eda5-489d-8b26-b42df64afbe5/pho10.jpg?v=1750012653818" alt="home banner 3"/>
+    <img src="https://cdn.glitch.global/96912554-eda5-489d-8b26-b42df64afbe5/pho9.jpg?v=1750013525394" alt="home banner 4"/>
+  </section>
+
+  <!-- Go Live Section -->
+  <section id="live" class="feature-section">
+    <h2>Go Live</h2>
+    <p>Start streaming instantly to engage your fans.</p>
+    <img src="https://cdn.glitch.global/96912554-eda5-489d-8b26-b42df64afbe5/thumbnails%2Fde4.jpg?1751180386196" alt="go live 1"/>
+    <img src="https://cdn.glitch.global/96912554-eda5-489d-8b26-b42df64afbe5/thumbnails%2Fde5.jpg?1751180394545" alt="go live 2"/>
+    <img src="https://cdn.glitch.global/96912554-eda5-489d-8b26-b42df64afbe5/thumbnails%2Fde6.jpg?1751180403451" alt="go live 3"/>
+    <img src="https://cdn.glitch.global/96912554-eda5-489d-8b26-b42df64afbe5/thumbnails%2Fde7.jpg?1751180408250" alt="go live 4"/>
+    <img src="https://cdn.glitch.global/96912554-eda5-489d-8b26-b42df64afbe5/thumbnails%2Fde8.jpg?1751180420102" alt="go live 5"/>
+  </section>
+
+  <!-- 1-to-1 Call Section -->
+  <section id="call" class="feature-section">
+    <h2>1-to-1 Call</h2>
+    <p>Get paid per minute when fans book private calls.</p>
+    <img src="https://cdn.glitch.global/96912554-eda5-489d-8b26-b42df64afbe5/pho10.jpg?v=1750012653818" alt="private call"/>
+    <img src="https://cdn.glitch.global/96912554-eda5-489d-8b26-b42df64afbe5/thumbnails%2Fpho11.jpg?1750012666583" alt="private call"/>
+    <img src="https://cdn.glitch.global/96912554-eda5-489d-8b26-b42df64afbe5/thumbnails%2Fdev%203.jpg?1750780433736" alt="private call"/>
+  </section>
+
+  <!-- Gaming Section -->
+  <section id="gaming" class="feature-section">
+    <h2>Gaming Feature</h2>
+    <p>Here in these applications you can make new friends and Play various games.</p>
+    <img src="https://cdn.glitch.global/96912554-eda5-489d-8b26-b42df64afbe5/thumbnails%2Fde9.jpg?1751180601377" alt="gaming 1"/>
+    <img src="https://cdn.glitch.global/96912554-eda5-489d-8b26-b42df64afbe5/thumbnails%2Fde10.jpg?1751180612477" alt="gaming 2"/>
+    <img src="https://cdn.glitch.global/96912554-eda5-489d-8b26-b42df64afbe5/thumbnails%2Fde11.jpg?1751180615318" alt="gaming 3"/>
+    <img src="https://cdn.glitch.global/96912554-eda5-489d-8b26-b42df64afbe5/thumbnails%2Fde12.jpg?1751180621856" alt="gaming 4"/>
+  </section>
+
+  <!-- Earnings Section -->
+  <section id="earn" class="feature-section">
+    <h2>Earning System</h2>
+    <p>Earn through tips, gifts, and more while streaming.</p>
+    <img src="https://cdn.glitch.global/96912554-eda5-489d-8b26-b42df64afbe5/thumbnails%2Fde2.jpg?1751180213720" alt="earning system 1"/>
+    <img src="https://cdn.glitch.global/96912554-eda5-489d-8b26-b42df64afbe5/thumbnails%2Fde1.jpg?1751180208725" alt="earning system 2"/>
+    <img src="https://cdn.glitch.global/96912554-eda5-489d-8b26-b42df64afbe5/thumbnails%2Fde3.jpg?1751180218726" alt="earning system 3"/>
+  </section>
+
+  <!-- Join Section -->
+  <section id="join" class="feature-section">
+    <h2>The applications you can join and earn with us</h2>
+    <p>1. Chamet</p>
+    <p>2. Kmaichat</p>
+    <p>3. Crushu</p>
+    <p>4. Chato</p>
+    <p>For more information Connect with us on WhatsApp.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 LiveStream Creators Hub<br><br>
+    <a href="https://wa.me/918516973606" class="whatsapp-float" target="_blank" style="position: fixed; bottom: 20px; right: 20px;">
+      <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" />
+   <span>Contact Us</span>
+    </a>
+  </footer>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.feature-section').forEach(sec => sec.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
+
+</body>
 </html>
+
